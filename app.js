@@ -12,8 +12,8 @@ function calcularBhaskara(){
     result1 = ((-b + Math.sqrt(delta)) / 2*a)
     result1=result1.toFixed(2)
     result2 = ((-b - Math.sqrt(delta)) / 2*a)
-    result2=result2.toFixed(2)                        
-    alert(result1,result2)
+    result2=result2.toFixed(2)   
+    alert(result1 + result2)                 
     return (result1+" "+ result2)
 }
 
@@ -21,3 +21,8 @@ function mostrarResultado(){
     let caixinha=document.getElementById("poluicao")
     caixinha.innerHTML="<p>"+calcularBhaskara()+"</p>"
 }
+
+function mostrarResultado2(){
+    let caixinha=document.getElementById("AURA")
+    caixinha.innerHTML="<p>"+calcularBhaskara()+"</p>"
+} 
